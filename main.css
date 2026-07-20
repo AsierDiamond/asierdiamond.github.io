@@ -1,3 +1,22 @@
+:root.light {
+    --bg: #eee;
+    --bg-seco: #ddd;
+
+    --border: #ccc;
+    --border-seco: #bebebe;
+    --border-tert: #ddd;
+
+    --text: #000000;
+    --font: sans-serif;
+    --link: #448ad4;
+
+    --gray: #a0a0a0;
+
+    --padding: 0.5rem;
+    --padding-min: 0.25rem;
+    --padding-large: 1rem;
+}
+
 :root.dark {
     --bg: #222;
     --bg-seco: #2c2c2c;
@@ -34,6 +53,18 @@ header {
     background-color: var(--bg-seco);
 
     border-bottom: var(--border-seco) solid 1px;
+
+    > button {
+        background: transparent;
+        color: var(--link);
+        font-size: 16px;
+        text-decoration: underline;
+        height: 16px;
+
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
 }
 
 a {
@@ -70,6 +101,7 @@ div.info {
 
 hr {
     border-color: var(--border-tert);
+    border-style: solid;
     width: 100%;
 }
 
@@ -89,7 +121,7 @@ div.list {
         > h2 {
             margin: var(--padding) 0;
         }
-        
+
         > img {
             max-height: 20rem;
         }
